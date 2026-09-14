@@ -22,7 +22,7 @@
 <body>
 
 <h1>LookBook — Privacy Policy</h1>
-<p class="meta">Last updated: 2 September 2026</p>
+<p class="meta">Last updated: 14 September 2026</p>
 
 <p>LookBook (“the app”) is an EPUB and PDF reader with optional AI features that
 show portraits of the characters in the books you read. This policy explains
@@ -32,10 +32,14 @@ what the app collects, why, and who it is shared with.</p>
 contact: <strong><a href="mailto:erlan.asimkhanov02@gmail.com">erlan.asimkhanov02@gmail.com</a></strong>.</p>
 
 <h2>1. Reading works without an account</h2>
-<p>Importing books, reading them, bookmarks, notes, reading position, themes and
-reader settings are stored <strong>on your device only</strong>. The files of the
-books you import are never uploaded to our servers. You can use the app without
-signing in and without a network connection.</p>
+<p>The files of the books you import are <strong>never uploaded to our
+servers</strong>. Your bookmarks, notes, the exact place you stopped at, your
+themes and reader settings stay <strong>on your device</strong>. You can use the
+app as a reader without signing in and without a network connection.</p>
+<p>The AI features are the part that needs a server. When they are on, the app
+tells us <em>how far</em> through a book you are, as a percentage — that is how
+it knows which characters you have already met and which would be a spoiler.
+Section&nbsp;2 lists everything your account holds on our side.</p>
 
 <h2>2. What we collect</h2>
 
@@ -64,9 +68,34 @@ signing in and without a network connection.</p>
   point you choose, and never beyond your reading position. The text itself is
   not retained: only a short summary and a hash used to avoid re-processing the
   same chapter.</li>
-  <li><strong>Reading position</strong> for books opened through the in-app
-  catalogue, so you can continue where you stopped.</li>
+  <li><strong>How far you have read</strong> — a percentage, and for books
+  opened through the in-app catalogue also the chapter and paragraph, so you can
+  continue where you stopped. We never receive the text you are looking at, only
+  how far into the book it is.</li>
 </ul>
+
+<h3>What your account keeps on our servers</h3>
+<p>If you use the AI features — signed in or as a guest — the following is
+stored against your account, so your collection survives a new phone, a
+reinstall, or deleting and re-importing the same file:</p>
+<ul>
+  <li><strong>The books you connected:</strong> title, author, language, number
+  of chapters, file type, and a fingerprint of the file — a hash of a sample of
+  its bytes, which lets us recognise the same file again. The file itself never
+  leaves your device.</li>
+  <li><strong>How far you got</strong> in each of those books.</li>
+  <li><strong>Which characters you have met</strong>, in which book, and at what
+  point you met them. <strong>This outlives the book:</strong> removing a book
+  from your library deletes the file from your device but deliberately keeps the
+  characters you earned, so importing it again brings them back.</li>
+  <li><strong>Counters</strong> of AI usage and cost, used for the free
+  allowance and to prevent abuse.</li>
+  <li><strong>Recap summaries</strong> you asked for, plus a hash of each
+  chapter they were made from (not its text).</li>
+  <li><strong>Problem reports</strong> you send us about a portrait.</li>
+  <li><strong>Your subscription status</strong> and its expiry date.</li>
+</ul>
+<p>All of it is deleted when you delete your account (section&nbsp;5).</p>
 
 <h3>Generated content</h3>
 <p>Character portraits generated for you are stored on our storage and content
@@ -87,18 +116,22 @@ prompts used for generation.</p>
   <li><strong>RevenueCat</strong> — subscription status.</li>
   <li><strong>OpenAI</strong> and <strong>Perplexity</strong> — text analysis and
   image generation for the AI features.</li>
-  <li><strong>Supabase</strong> and <strong>Railway</strong> — database and
-  application hosting.</li>
+  <li><strong>Hetzner Online GmbH</strong> — application and database hosting,
+  on servers in Germany.</li>
   <li><strong>Amazon Web Services</strong> — storage and delivery of generated
-  images.</li>
+  images (Frankfurt region).</li>
   <li><strong>PostHog</strong> — product analytics.</li>
   <li><strong>Google (Firebase)</strong> — analytics and remote configuration of
   in-app content.</li>
 </ul>
-<p>We do not sell your data and do not use it for advertising.</p>
+<p>Your account data and the generated images are held in the European Union.
+Analytics events go to PostHog and Google, whose processing takes place in the
+United States. We do not sell your data and do not use it for advertising.</p>
 
 <h2>4. How long it is kept</h2>
-<p>Account data is kept while your account exists. Generated portraits and
+<p>Account data is kept while your account exists — including the characters
+you have met in a book you have since removed from your library, which is the
+point of keeping them. Generated portraits and
 character data are kept as part of a shared catalogue so the same book does not
 have to be processed twice. Chapter text submitted for a recap is discarded after
 the summary is produced. Logs are kept for a limited period for diagnostics.</p>
@@ -121,7 +154,7 @@ this address with a new “last updated” date.</p>
 <hr>
 
 <h1 lang="ru">LookBook — Политика конфиденциальности</h1>
-<p class="meta" lang="ru">Обновлено: 2 сентября 2026</p>
+<p class="meta" lang="ru">Обновлено: 14 сентября 2026</p>
 
 <div lang="ru">
 
@@ -133,10 +166,14 @@ this address with a new “last updated” date.</p>
 <strong><a href="mailto:erlan.asimkhanov02@gmail.com">erlan.asimkhanov02@gmail.com</a></strong>.</p>
 
 <h2>1. Чтение работает без аккаунта</h2>
-<p>Импорт книг, чтение, закладки, заметки, позиция чтения, темы и настройки
-читалки хранятся <strong>только на вашем устройстве</strong>. Файлы книг,
-которые вы импортируете, на наши серверы не загружаются. Приложением можно
-пользоваться без входа и без интернета.</p>
+<p>Файлы книг, которые вы импортируете, <strong>на наши серверы не
+загружаются</strong>. Закладки, заметки, точное место, на котором вы
+остановились, темы и настройки читалки остаются <strong>на устройстве</strong>.
+Читалкой можно пользоваться без входа и без интернета.</p>
+<p>Сервер нужен AI-функциям. Когда они включены, приложение сообщает нам,
+<em>насколько далеко</em> вы прочитали книгу — в процентах: именно так оно
+понимает, кого из героев вы уже встретили, а кто был бы спойлером. Что именно
+хранится у вашего аккаунта — в разделе&nbsp;2.</p>
 
 <h2>2. Какие данные собираются</h2>
 
@@ -164,8 +201,33 @@ this address with a new “last updated” date.</p>
   напомнить, что было, приложение отправляет текст последних глав до выбранной
   вами точки и никогда дальше позиции чтения. Сам текст не сохраняется:
   остаются только краткий пересказ и хэш, чтобы не обрабатывать главу заново.</li>
-  <li><strong>Позиция чтения</strong> для книг из встроенного каталога.</li>
+  <li><strong>Как далеко вы прочитали</strong> — процент, а для книг из
+  встроенного каталога ещё глава и абзац, чтобы продолжить с того же места. Сам
+  текст, который у вас на экране, нам не передаётся — только то, насколько он
+  далеко от начала книги.</li>
 </ul>
+
+<h3>Что хранится у аккаунта на наших серверах</h3>
+<p>Если вы пользуетесь AI-функциями — с аккаунтом или как гость, — у вашего
+аккаунта хранится следующее, чтобы коллекция пережила новый телефон,
+переустановку и повторный импорт того же файла:</p>
+<ul>
+  <li><strong>Подключённые книги:</strong> название, автор, язык, число глав,
+  формат файла и отпечаток файла — хэш от выборки его байтов, по которому мы
+  узнаём тот же файл. Сам файл устройство не покидает.</li>
+  <li><strong>Насколько далеко вы прочитали</strong> каждую из них.</li>
+  <li><strong>Каких героев вы встретили</strong>, в какой книге и в каком месте.
+  <strong>Это переживает книгу:</strong> удаление книги из библиотеки стирает
+  файл с устройства, но намеренно сохраняет заработанных героев — импортируете
+  её заново, и они вернутся.</li>
+  <li><strong>Счётчики</strong> использования AI и его стоимости — для
+  бесплатного лимита и защиты от злоупотреблений.</li>
+  <li><strong>Пересказы</strong>, которые вы запрашивали, и хэш каждой главы, из
+  которой они собраны (не её текст).</li>
+  <li><strong>Жалобы на портреты</strong>, которые вы нам отправляете.</li>
+  <li><strong>Статус подписки</strong> и дата её окончания.</li>
+</ul>
+<p>Всё это удаляется вместе с аккаунтом (раздел&nbsp;5).</p>
 
 <h3>Сгенерированный контент</h3>
 <p>Портреты героев хранятся в нашем хранилище и CDN и связаны с книгой и
@@ -186,17 +248,22 @@ this address with a new “last updated” date.</p>
   <li><strong>RevenueCat</strong> — статус подписки.</li>
   <li><strong>OpenAI</strong> и <strong>Perplexity</strong> — анализ текста и
   генерация изображений.</li>
-  <li><strong>Supabase</strong> и <strong>Railway</strong> — база данных и
-  хостинг приложения.</li>
-  <li><strong>Amazon Web Services</strong> — хранение и раздача изображений.</li>
+  <li><strong>Hetzner Online GmbH</strong> — хостинг приложения и базы данных,
+  серверы в Германии.</li>
+  <li><strong>Amazon Web Services</strong> — хранение и раздача изображений
+  (регион Франкфурт).</li>
   <li><strong>PostHog</strong> — продуктовая аналитика.</li>
   <li><strong>Google (Firebase)</strong> — аналитика и удалённая настройка
   контента в приложении.</li>
 </ul>
-<p>Мы не продаём ваши данные и не используем их для рекламы.</p>
+<p>Данные аккаунта и сгенерированные изображения хранятся в Европейском союзе.
+События аналитики уходят в PostHog и Google, их обработка происходит в США. Мы
+не продаём ваши данные и не используем их для рекламы.</p>
 
 <h2>4. Сроки хранения</h2>
-<p>Данные аккаунта хранятся, пока существует аккаунт. Портреты и описания героев
+<p>Данные аккаунта хранятся, пока существует аккаунт, — включая героев,
+встреченных в книге, которую вы уже удалили из библиотеки: ради этого они и
+хранятся. Портреты и описания героев
 хранятся как часть общего каталога, чтобы одну и ту же книгу не обрабатывать
 дважды. Текст глав, отправленный для напоминания, удаляется после составления
 пересказа. Логи хранятся ограниченное время.</p>
